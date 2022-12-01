@@ -51,7 +51,7 @@ public class Task2 {
                 } else {db.put(NameS,1);}    
                 line = reader.readLine();
             }
-            db.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue()).forEach(System.out::println);
+            db.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).forEach(System.out::println);
         }
     }      
 }
